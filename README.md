@@ -33,6 +33,8 @@ In the following, this is described in detail.
    4. Switch to the `conda-forge` channel. Because of license restrictions, we have to use `conda-forge` and disable the default conda channel.
       1. Add conda-forge as the highest priority channel (taken from [here](https://conda-forge.org/docs/user/introduction.html#how-can-i-install-packages-from-conda-forge)): `conda config --add channels conda-forge`
       2. disable the default conda channel: `conda config --remove channels defaults`
+   5. Consider setting `conda config --set auto_activate_base false` to stop conda from activating the base image for each new shell session. <br>
+      This leads to a significant speedup in opening new shell sessions.
 2. Setup a conda environment
    1. Create a conda environment, e.g. using: `conda create -n {env} python=3.9` (replace `{env}` with a name of your
       choice)
