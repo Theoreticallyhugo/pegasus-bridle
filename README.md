@@ -37,7 +37,7 @@ In the following, this is described in detail.
 2. Setup a conda environment
    1. Create a conda environment, e.g. using: `conda create -n {env} python=3.9` (replace `{env}` with a name of your
       choice)
-   2. Either start a [screen](https://help.ubuntu.com/community/Screen)/[tmux](https://github.com/tmux/tmux/wiki) session or make sure you are in bash (type `bash` in terminal) to make the conda commands available.
+   2. Either start a [screen](https://help.ubuntu.com/community/Screen) / [tmux](https://github.com/tmux/tmux/wiki) session or make sure you are in bash (type `bash` in terminal) to make the conda commands available.
    3. Activate the environment: `conda activate {env}`
    4. Install any required python packages. We recommend that you use the PyPI cache installed at the cluster as described [here](http://projects.dfki.uni-kl.de/km-publications/web/ML/core/hpc-doc/posts/pypi-cache/), e.g. using:
       ```
