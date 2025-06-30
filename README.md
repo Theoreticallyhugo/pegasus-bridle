@@ -26,7 +26,7 @@ In the following, this is described in detail.
    2. Install miniconda automatically using `bash ./miniconda.sh -b -p /netscratch/$USER/miniconda3` or manually with `bash ./miniconda.sh` if you want to agree to the license and set the install location by hand. <br>
       IMPORTANT: It is recommended to use `/netscratch/$USER/miniconda3` as install location. <br>
       Note: If you want to choose another install directory, just adapt the respective environment variable
-      `HOST_CONDA_ENVS_DIR` in the `.env` file (see below), and change the path after `-p`.
+      `HOST_CONDA_ENVS_DIR` in the `.env` file (see below), and change the install path (parameter `-p` in the command above).
    3. Initialise conda by running `/netscratch/$USER/miniconda3/bin/conda init bash`. <br>
       If you use a shell that is not bash, then replace bash with it in the above command. <br>
       If you did not install conda at the recommended location, then initialise by running `<your_path_to_miniconda>/miniconda3/bin/conda activate bash`
