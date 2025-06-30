@@ -23,10 +23,9 @@ In the following, this is described in detail.
 1. Install Miniconda
    1. Download the miniconda setup script using the following command: <br>
       `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh`
-   2. Install miniconda automatically using `bash ./miniconda.sh -b -p /netscratch/$USER/miniconda3` or manually with `bash ./miniconda.sh` if you want to agree to the license and set the install location by hand. <br>
-      IMPORTANT: It is recommended to use `/netscratch/$USER/miniconda3` as install location. <br>
-      Note: If you want to choose another install directory, just adapt the respective environment variable
-      `HOST_CONDA_ENVS_DIR` in the `.env` file (see below), and change the install path (parameter `-p` in the command above).
+   2. Install miniconda, accept the terms and conditions, and set the proper installation path. <br>
+      This can be done non-interactively, all in one line, by running bash `./miniconda.sh -b -p /netscratch/$USER/miniconda3`, where `-b` accepts the terms, and `-p <installation-path>` sets the installation path. <br>
+      Alternatively use `bash ./miniconda.sh` for an interactive dialogue in which you get to read and agree to the terms and conditions, as well as setting the installation path.
    3. Initialise conda by running `<your_path_to_miniconda>/miniconda3/bin/conda init bash`, e.g., <br>
       `/netscratch/$USER/miniconda3/bin/conda init bash` if you installed in the default location.
    4. Switch to the `conda-forge` channel. Because of license restrictions, we have to use `conda-forge` and disable the default conda channel.
