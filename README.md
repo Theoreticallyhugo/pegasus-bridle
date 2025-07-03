@@ -24,7 +24,7 @@ In the following, this is described in detail.
    1. Download the miniconda setup script using the following command: <br>
       `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh`
    2. Install miniconda, accept the terms and conditions, and set the proper installation path. <br>
-      This can be done non-interactively, all in one line, by running bash `./miniconda.sh -b -p /netscratch/$USER/miniconda3`, where `-b` accepts the terms, and `-p <installation-path>` sets the installation path. <br>
+      This can be done non-interactively, all in one line, by running `bash ./miniconda.sh -b -p /netscratch/$USER/miniconda3`, where `-b` accepts the terms, and `-p <installation-path>` sets the installation path. <br>
       Alternatively use `bash ./miniconda.sh` for an interactive dialogue in which you get to read and agree to the terms and conditions, as well as setting the installation path.
    3. Initialise conda by running `<your_path_to_miniconda>/miniconda3/bin/conda init bash`, e.g., <br>
       `/netscratch/$USER/miniconda3/bin/conda init bash` if you installed in the default location.
